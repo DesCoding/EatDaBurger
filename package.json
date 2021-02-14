@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! is a restaurant app that lets customers input the names of burgers they'd like to devour.  Once the customer types a burger name, the burger will appear on the page for customers to devour or save for later.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesCoding/burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DesCoding/burger/issues"
+  },
+  "homepage": "https://github.com/DesCoding/burger#readme",
+  "dependencies": {
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
