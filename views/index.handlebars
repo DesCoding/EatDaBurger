@@ -1,11 +1,13 @@
-<h1>Eat Da Burger!</h1>
+<h1>Eat Da Burgers!</h1>
 
 <p>Enter a burger you want to eat and click the "Submit" button!</p>
 
 <ul>
-  {{#each burger}}
+  {{#each burgers}}
   {{#unless devoured}}
-  {{> burger/burger-block devour=true}}
+  {{!-- {{> burger/burger-block devour=true}} --}}
+  {{burger_name}}
+  hi
   {{/unless}}
   {{/each}}
 </ul>
@@ -13,9 +15,9 @@
 <h2>Burgers that are devoured!</h2>
 
 <ul>
-  {{#each burger}}
+  {{#each burgers}}
   {{#if devour}}
-  {{> burger/burger-block devour=false}}
+  {{> burgers/burgers-block devour=false}}
   {{/if}}
   {{/each}}
 </ul>
@@ -34,5 +36,5 @@
     <input type="radio" name="Devoured" value="0" id="devoured"> Devoured
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Submit</button>
 </form>
