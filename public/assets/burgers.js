@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // UPDATE
-  const changeBurgerBtns = document.querySelectorAll(".change-burger");
+  const changeBurgerBtns = document.querySelectorAll(".devoured");
 
   // Set up the event listener for the create button
   if (changeBurgerBtns) {
@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const devoured = e.target.getAttribute("data-devoured");
 
         const newBurgerState = {
-          devour: devoured,
+          devoured: true,
+          //devour: devoured,
         };
 
         fetch(`/api/burgers/${id}`, {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
-        burger_name: document.getElementById("ca").value.trim(),
+        burger_name: document.getElementById("burgerName").value.trim(),
         devour: document.getElementById("devoured").checked,
       };
 
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         body: JSON.stringify(newBurger),
       }).then(() => {
         // Empty the form
-        document.getElementById("ca").value = "";
+        document.getElementById("burgerName").value = "";
 
         // Reload the page so the user can see the new quote
         console.log("Created a new burger!");
