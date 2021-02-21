@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       button.addEventListener("click", (e) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute("data-id");
-        const devoured = e.target.getAttribute("data-newburger");
+        const devoured = e.target.getAttribute("data-devoured");
 
         const newBurgerState = {
           devour: devoured,
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
-        name: document.getElementById("ca").value.trim(),
-        devour: document.getElementById("devour").checked,
+        burger_name: document.getElementById("ca").value.trim(),
+        devour: document.getElementById("devoured").checked,
       };
 
       // Send POST request to create a new quote

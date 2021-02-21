@@ -1,3 +1,8 @@
 body {
-    background-color: rgb(238, 241, 240);
+    background-color: rgb(238, 230, 119);
+}
+
+img {
+    width: 10%;
+    height: 10%;
 }
