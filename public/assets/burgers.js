@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         const newBurgerState = {
           devoured: true,
-          //devour: devoured,
         };
 
         fetch(`/api/burgers/${id}`, {
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
         burger_name: document.getElementById("burgerName").value.trim(),
-        devour: false,
+        devoured: false,
       };
 
       // Send POST request to create a new quote
