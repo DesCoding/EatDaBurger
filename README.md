@@ -20,7 +20,7 @@ Eat-Da-Burger! is a restaurant app that lets customers input the names of burger
 
 [GitHub Repo](https://github.com/DesCoding/burger)
 
-[Heroku Link to App](https://git.heroku.com/mysterious-escarpment-22917.git) 
+[Heroku Link to App](https://mysterious-escarpment-22917.herokuapp.com/) 
 
 # Demo
 
