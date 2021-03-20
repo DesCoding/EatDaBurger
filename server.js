@@ -1,5 +1,8 @@
 //requires express module from node
 const express = require("express");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 //connects to port
 const PORT = process.env.PORT || 3030;
