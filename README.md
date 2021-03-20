@@ -15,6 +15,13 @@ Eat-Da-Burger! is a restaurant app that lets customers input the names of burger
   * ORM
   * MVC design pattern
 
+# Installation
+
+To run this application locally, a user needs to create a .env file following this setup:
+
+USER_ENV="username of mysql workbench"
+
+PASSWORD_ENV="password to mysql workbench"
 
 # Deployment
 
@@ -53,11 +60,3 @@ SOFTWARE.
 # Contact Info
 
 d.stout31@yahoo.com
-
-# Installation
-
-User will run NPM i 
-to run this application locally, a user needs to create a .env file following this setup:
-USER_ENV=<username of mysql workbench>
-
-PASSWORD_ENV=<password to mysql workbench>
